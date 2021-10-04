@@ -1,0 +1,179 @@
+* { 
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(120, 167, 236);
+  }
+  a:hover {
+    color: #ffffff;
+  }
+
+  .main-nav {
+    width: 100%;
+    background: rgb(37, 37, 37);
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    display:flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .nav .name {
+      display: block;
+      margin-right: auto;
+      color: rgb(120, 167, 236);
+  }
+  .nav li {
+    padding: 5px 10px 10px 10px;
+    transition: .3s;
+  }
+  
+  .nav li:hover {
+    transform: scale(1.2);
+  }
+  
+  .nav a {
+    transition: all .3s;
+  }
+  
+  .nav a:hover{ 
+    color: rgb(255, 255, 255);
+  }
+  
+  header {
+    text-align: center;
+    background: url('images/azores-mountain-landscape-1.jpg') no-repeat bottom ;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+
+header {
+    line-height: 1.5;
+}
+
+  header .profile-image {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(68, 66, 204);
+    transition: all .5s;
+  }
+  header .profile-image:hover {
+    transform: scale(1.2) rotate(365deg);
+  }
+  .tag {
+    background: linear-gradient(90deg, rgba(255,175,0,0.37298669467787116) 33%, rgba(118,164,190,0.8547794117647058) 83%);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 50px;
+    display: table;
+    margin: 10px auto;
+  } 
+
+
+.story {
+    background-color: #8a6c4a;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    display: table;
+    margin: 20px  20px auto;
+    text-align: left;
+    transition: 0.5s;
+  }
+
+  .instruction {
+    background-color: #8a6c4a;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    display: table;
+    margin: 20px 20px auto;
+    text-align: left;
+    transition: 0.5s;
+  }
+
+
+  footer .copyright {
+    top: -8px;
+    font-size: .75em;
+  }
+
+  h1,h3,p {
+      color: white;
+  }
+
+  .story:hover,.instruction:hover {
+    transform: scale(1.1);
+  }
+  
+  .bod {
+    background: url("images/Savin-NY-Website-Background-Web.jpg") no-repeat bottom;
+  }
+
+
+
+
+  /* ------------------- */
+
+
+  @media screen and (min-width: 720px) {
+  
+    .flex {
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: flex; 
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 470px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+      padding: 0 30px;
+    }
+  
+  
+    main {
+      padding-top: 20px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+
+
+
